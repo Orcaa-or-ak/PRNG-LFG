@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9294f0a8-2f12-47e1-8724-a830eb0c7259)# Lagged Fibonacci Generator (LFG)
+# Lagged Fibonacci Generator (LFG)
 
 This project demonstrates the implementation of a Lagged Fibonacci Generator (LFG) in Java.
 
