@@ -7,7 +7,7 @@ This project demonstrates the implementation of a Lagged Fibonacci Generator (LF
 The LFG algorithm is defined by the recurrence relation:
 
 $$
-X_n = (X_{n-j} \cdot X_{n-k}) \mod m
+X_n = (X_{n-j} ◦ X_{n-k}) \mod m
 $$
 
 Where:
