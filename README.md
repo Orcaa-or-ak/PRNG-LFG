@@ -11,12 +11,12 @@ X_n = (X_{n-j} ◦ X_{n-k}) \mod m
 $$
 
 Where:
-- $X$ is the sequence of pseudorandom values,
-- $X_0$ is the seed or starting value,
-- $X_n$ is the next number in the sequence,
-- $j$ and $k$ are the lags,
+- $X$ is the sequence of pseudorandom values.
+- $X_0$ is the seed or starting value.
+- $X_n$ is the next number in the sequence.
+- $j$ and $k$ are the lags.
 - $m$ is the modulus.
-- $◦$ is a binary operation (usually addition, subtraction, multiplication, or bitwise XOR
+- $◦$ is a binary operation (usually addition, subtraction, multiplication, or bitwise XOR.
 
 ## Implementation
 
