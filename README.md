@@ -16,6 +16,7 @@ Where:
 - $X_n$ is the next number in the sequence,
 - $j$ and $k$ are the lags,
 - $m$ is the modulus.
+- $◦$ is a binary operation (usually addition, subtraction, multiplication, or bitwise XOR
 
 ## Implementation
 
