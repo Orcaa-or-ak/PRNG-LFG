@@ -1,4 +1,4 @@
-# Lagged Fibonacci Generator (LFG)
+![image](https://github.com/user-attachments/assets/9294f0a8-2f12-47e1-8724-a830eb0c7259)# Lagged Fibonacci Generator (LFG)
 
 This project demonstrates the implementation of a Lagged Fibonacci Generator (LFG) in Java.
 
@@ -7,7 +7,7 @@ This project demonstrates the implementation of a Lagged Fibonacci Generator (LF
 The LFG algorithm is defined by the recurrence relation:
 
 $$
-X_n = (X_{n-j} + X_{n-k}) \mod m
+X_n = (X_{n-j} \cdot X_{n-k}) \mod m
 $$
 
 Where:
