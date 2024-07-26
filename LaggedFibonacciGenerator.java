@@ -1,7 +1,6 @@
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-// Produces a sequence of numbers using the Lagged Fibonacci Generator
 public class LaggedFibonacciGenerator {
     private BigInteger[] state;
     private int j;
@@ -37,7 +36,7 @@ public class LaggedFibonacciGenerator {
     }
 
     public static void main(String[] args) {
-        int bitLength = 512;
+        int bitLength = 1024;
 
         // Lags for the generator
         int j = 5;
@@ -48,9 +47,21 @@ public class LaggedFibonacciGenerator {
 
         LaggedFibonacciGenerator lfg = new LaggedFibonacciGenerator(bitLength, j, k, seed);
 
-        // Generate and print 10 random numbers
+        // Get the Java runtime
+        Runtime runtime = Runtime.getRuntime();
+
+        // Generate and print 10 random numbers along with CPU, RAM, and time cost
         for (int i = 0; i < 10; i++) {
-            System.out.println(lfg.next());
+            long startTime = System.nanoTime();
+            BigInteger randomNumber = lfg.next();
+            long endTime = System.nanoTime();
+            double timeTakenMs = (endTime - startTime) / 1_000_000.0;
+            double usedMemoryMb = (runtime.totalMemory() - runtime.freeMemory()) / (1024.0 * 1024.0);
+
+            System.out.println("Random Number: " + randomNumber);
+            System.out.println("Bit Length: " + randomNumber.bitLength());
+            System.out.println("Time taken: " + timeTakenMs + " ms");
+            System.out.println("Used Memory: " + usedMemoryMb + " MB");
             System.out.println();
         }
     }
